@@ -69,7 +69,8 @@ class Manila:
                 "army": self.army,
                 "mode": self.mode,
                 "rank": self.rank,
-                "recon": self.recon,
+                "materials": self.materials,
+                "r_materials": self.r_materials,
 
             }
             print("debug: ")
