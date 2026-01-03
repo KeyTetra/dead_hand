@@ -1,6 +1,6 @@
 import asyncio
 from telegram import Bot
-
+import os
 
 
 
@@ -26,5 +26,5 @@ async def get_missing_messages(bot_token):
 
 if __name__ == '__main__':
     # Replace with your actual bot token
-    BOT_TOKEN = "8110812514:AAGzWbVs3747m4gRZor3f1l2nfAnfi62124"
-    asyncio.run(get_missing_messages(BOT_TOKEN))
+
+    asyncio.run(get_missing_messages(os.getenv("TELEGRAM_BOT_KEY")))
