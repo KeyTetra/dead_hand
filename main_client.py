@@ -13,6 +13,9 @@ password = "secret"
 
 # Function to handle incoming messages
 def on_message(client, userdata, message):
+    print("client:", client)
+    print("topic:", message.topic)
+    print("userdata:", userdata)
     print("Received message:", str(message.payload.decode("utf-8")))
 
 
